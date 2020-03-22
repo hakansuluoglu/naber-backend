@@ -1,0 +1,30 @@
+{
+  "name": "naber-chat",
+  "dependencies": {
+    "@babel/runtime": "^7.9.2",
+    "aws-sdk": "^2.643.0",
+    "serverless-appsync-plugin": "^1.2.0",
+    "uuidv4": "^6.0.6"
+  },
+  "scripts": {
+    "start": "serverless dynamodb install && serverless offline start",
+    "deploy-appsync": "serverless deploy-appsync",
+    "update-appsync": "serverless update-appsync",
+    "delete-appsync": "serverless delete-appsync"
+  },
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "body-parser": "^1.15.2",
+    "serverless-appsync-offline": "^1.4.0",
+    "serverless-dynamodb-client": "0.0.2",
+    "serverless-dynamodb-local": "^0.2.10",
+    "serverless-offline": "^6.0.0",
+    "serverless-webpack": "^5.3.1",
+    "webpack": "^4.28.3",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
