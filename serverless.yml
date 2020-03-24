@@ -13,9 +13,9 @@ package:
 
 plugins:
   - serverless-appsync-plugin
-  - serverless-dynamodb-local
-  - serverless-appsync-offline
-  - serverless-offline
+#  - serverless-dynamodb-local
+#  - serverless-appsync-offline
+#  - serverless-offline
 
 custom:
   stage: dev
@@ -42,7 +42,7 @@ custom:
         response: "createMessage-response-mapping-template.txt"
       - dataSource: Messages
         type: Query
-        field: getMessages
+        field: getAllMessages
         request: "getMessages-request-mapping-template.txt"
         response: "getMessages-response-mapping-template.txt"
     schema: schema.graphql

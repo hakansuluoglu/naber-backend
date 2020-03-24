@@ -2,11 +2,10 @@ type Mutation {
     createMessage(
         body: String!
     ): Message!
-
 }
 
 type Query {
-    getMessages(filter: String): [Message!]!
+    getAllMessages: [Message!]
 }
 
 
