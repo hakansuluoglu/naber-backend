@@ -2,10 +2,10 @@
      "version": "2018-05-29",
      "operation" : "PutItem",
      "key" : {
-         "id" : { "S" : "$util.autoId()" }
+         "id" : { "S" : "${context.arguments.id}" }
      },
      "attributeValues" : {
          "body" : { "S" : "${context.arguments.body}" },
          "createdAt": {"S" : "$util.time.nowISO8601()" }
-     }
+     }s
  }
