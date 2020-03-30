@@ -7,5 +7,5 @@
      "attributeValues" : {
          "body" : { "S" : "${context.arguments.body}" },
          "createdAt": {"S" : "$util.time.nowISO8601()" }
-     }s
+     }
  }

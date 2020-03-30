@@ -2,6 +2,7 @@ type Mutation {
     createMessage(
         body: String!
         id: String!
+        createdAt : String
     ): Message!
 }
 
